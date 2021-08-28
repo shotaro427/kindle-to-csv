@@ -1,0 +1,16 @@
+{
+  "name": "KindleToCsv",
+  "action": {},
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "description": "Download csv from kindle",
+  "permissions": [
+    "downloads",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+		"service_worker": "content.js",
+    "matches": ["https://read.amazon.co.jp/kindle-library*"]
+	}
+}
